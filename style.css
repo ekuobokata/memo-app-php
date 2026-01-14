@@ -1,0 +1,153 @@
+/* =======================================
+   全体の基本設定
+   ======================================= */
+body {
+    font-family: "Yu Gothic", sans-serif;  /* 全体のフォントを設定 */
+    margin: 20px;                          /* ページ全体の余白 */
+}
+
+/* =======================================
+   ログイン状態表示
+   ======================================= */
+.login-status {
+    font-size: 12px;  
+    color: brack;      
+    margin-bottom: 10px;
+}
+
+/* =======================================
+   青色ボタン
+   ======================================= */
+.btn-blue {
+    background-color: #4da6ff;   /* 青系 */
+    color: white;                /* 白文字 */
+    padding: 8px 20px;          /* サイズ */
+    border: none;                /* 枠なし */
+    border-radius: 6px;          /* 丸み */
+    cursor: pointer;             /* クリック可 */
+    font-size: 16px;             /* 文字大きめ */
+}
+
+.logout-btn:hover {
+    background-color: #1a8cff;   /* ホバー時濃い青 */
+}
+
+/* =======================================
+   白ボタン（青文字）
+   ======================================= */
+.btn-white {
+    background-color: white;     /* 白背景 */
+    color: #4da6ff;              /* 青文字 */
+    padding: 8px 20px;           /* サイズ */
+    border: 1px solid #4da6ff;  
+    border-radius: 6px;          /* 丸み */
+    cursor: pointer;             /* クリック可 */
+    font-size: 16px;             /* 文字大きめ */
+}
+
+.btn-white:hover {
+    background-color: #e6f2ff;        /* ホバー時に薄い青 */
+}
+
+
+/* =======================================
+   ヘッダー
+   ======================================= */
+.header {
+    margin-bottom: 10px;                   /* ヘッダー下の余白 */
+}
+
+/* タイトル部分を横並びにする */
+.site-title {
+    display: flex;          /* 横並び */
+    align-items: baseline;    /* 下揃え */
+    gap: 30px;              /* h1 と p の間の余白 */
+}
+
+/* h1 の文字色を濃い青に */
+.site-title h1{
+    color: #003366;  
+    margin: 0;
+}
+
+
+/* =======================================
+   授業メモ一覧の 1 メモごとの枠
+   ======================================= */
+.memo-box {
+    border: 1px solid #aaa;                /* 薄い枠線 */
+    padding: 10px;                          /* 内側の余白 */
+    margin-bottom: 15px;                    /* メモ同士の間隔 */
+    background: #f9f9f9;                    
+}
+
+/* メモ内の日付表示（小さくグレー） */
+.date {
+    font-size: 12px;                    
+    color: #666;                           
+}
+
+/* =======================================
+   フォームのテキスト入力欄の共通設定
+   ======================================= */
+input[type="text"],
+input[type="password"] {
+    width: 300px;                          
+    margin-bottom: 10px;                    /* 下に余白 */
+}
+
+/* =======================================
+   本文の textarea（大きめの入力欄）
+   ======================================= */
+.memo-textarea {
+    width: 95%;                              /* 画面のほぼ全幅（可変） */
+    height: 100px;                           /* 高さ */
+    font-size: 16px;                         /* 本文の文字サイズ */
+    line-height: 1.5;                        /* 行間く */
+    margin-bottom: 10px;                     /* 下の余白 */
+}
+
+/* =======================================
+   共通：赤色ボタン
+   ======================================= */
+.btn-red {
+    background-color: #ff4d4d;   /* 赤色 */
+    color: white;                /* 白文字 */
+    padding: 10px 25px;          /* サイズ */
+    border: none;                /* 枠なし */
+    border-radius: 6px;          /* 丸み */
+    cursor: pointer;             /* クリック可 */
+    font-size: 16px;             /* 文字大きめ */
+}
+
+.btn-red:hover {
+    background-color: #e60000;   /* 濃い赤に変化 */
+}
+
+
+/* =======================================
+   編集・削除ボタン（文字色：青)
+   ======================================= */
+
+.pass-btn {
+    color: #4da6ff;     
+    background: white;
+    border: none;     
+    border-radius: 3px;          /* 丸み */
+}
+/* =======================================
+   placeholder（薄い説明文）の文字デザインを統一
+   input と textarea 両方同じサイズにする
+   ======================================= */
+
+/* textarea の placeholder（例：'本文を入力'） */
+textarea::placeholder {
+    font-size: 12px;                         
+    color: #777;                             
+}
+
+/* input の placeholder（例：'タイトルを入力'） */
+input::placeholder {
+    font-size: 12px;                         
+    color: #777;  
+}
